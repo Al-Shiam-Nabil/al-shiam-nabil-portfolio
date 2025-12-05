@@ -1,3 +1,4 @@
+import AboutMe from "./Components/AboutMe/AboutMe"
 import Banner from "./Components/Banner/Banner"
 import Navbar from "./Components/Header/Navbar"
 
@@ -15,6 +16,7 @@ function App() {
 
       <main>
         <Banner></Banner>
+        <AboutMe></AboutMe>
       </main>
     </body>
     
