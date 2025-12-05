@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "name": "rent wheels",
+        "image": "https://i.ibb.co.com/ycZg28Bh/Screenshot-2025-12-06-020137.png",
+        "shortDescription": "RentWheels is a full-stack MERN application that connects users with local car owners or rental providers.",
+        "description": "RentWheels is a full-stack MERN application that connects users with local car owners or rental providers. Users can browse available cars, view details, and book rentals for specific dates. Car providers can list vehicles, manage bookings, and update availability.",
+        "technologies": "Tailwind Css,DaisyUI,React,React Router,Swiper,Firebase,Framer Motion,Typewriter,React Tooltip,React Icons,Sweet Alert2",
+        "keyFeatures": [
+            "Dynamic vehicle management.",
+            "Users can browse cars, view details, check availability, and book rentals.",
+            "Car owners can add, edit, delete vehicles and manage bookings. ",
+            "Implemented complete CRUD operations for cars and bookings. "
+        ],
+        "clientGithubLink": "https://github.com/Al-Shiam-Nabil/car-rent-wheels-client",
+        "serverGithubLink": "https://github.com/Al-Shiam-Nabil/car-rent-wheels-server",
+        "liveLink": "https://rent-wheels-project-10.netlify.app/"
+    },
+    {
+        "id": 2,
+        "name": "toy topia store",
+        "image": "https://i.ibb.co.com/cd0sNNb/toytopia.jpg",
+        "shortDescription": "Online marketplace for kids' toys, encouraging families to discover and support local toy sellers.",
+        "description": "Online marketplace for kids' toys, encouraging families to discover and support local toy sellers. Users can log in, browse toys, view detailed info, and leave feedback or ratings for toys they want to buy for their kids.",
+        "technologies": "Tailwind Css,DaisyUI,React,React Router,React Toastify,Swiper,Axios,Firebase.",
+        "keyFeatures": [
+            "Users can log in, browse toys, view detailed information.",
+            "Integrated Firebase Authentication for secure user management.Implemented Login, Logout, Edit Profile, and Forgot Password features. ",
+            "Dynamic search and sorting funtionality."
+        ],
+        "clientGithubLink": "https://github.com/Al-Shiam-Nabil/toy-topia-store",
+        "serverGithubLink": "",
+        "liveLink": "https://toytopia-store-bd.netlify.app/"
+    },
+      {"id":3,
+        "name": "e loabour",
+        "image": "https://i.ibb.co.com/BKKWPBcC/eLabour.png",
+        "shortDescription": "E-Labour is a modern online platform designed to help users easily find, hire, and contact skilled labourers.",
+        "description": "E-Labour is a modern online platform designed to help users easily find, hire, and contact skilled labourers based on category, location, and availability. The system provides an intuitive and user-friendly interface for users to browse labourers, view detailed information, and manage their own added workers through a private dashboard.",
+        "technologies": "Next.js 16 (App Router), React, TailwindCSS + DaisyUI, SWR for fetching and revalidation, Firebase Authentication, Node.js,Express.js,MongoDB ,REST API with CRUD operations",
+        "keyFeatures": [
+           "Add new labourers","Update or delete existing labourers","Manage all labourers in a dedicated dashboard","Real-time updates from backend API (Node.js + MongoDB)","Only authenticated users can add or manage labourers"
+        ],
+        "clientGithubLink": "https://github.com/Al-Shiam-Nabil/e-labour-client",
+        "serverGithubLink": "https://github.com/Al-Shiam-Nabil/e-labour-server",
+        "liveLink": "https://e-labour-client-kdin.vercel.app/"
+    }
+]

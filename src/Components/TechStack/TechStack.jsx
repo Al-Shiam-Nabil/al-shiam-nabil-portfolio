@@ -47,24 +47,27 @@ const skills = [
 
 const TechStack = () => {
   return (
+   
+<>
     <Container>
-      <Heading>My Tech Stack</Heading>
-
-      <div className="bg-gray-900 p-5 sm:p-10 rounded-xl">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 sm:gap-6  mx-auto">
+      <Heading>Tech Stack</Heading>
+     
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 sm:gap-6  mx-auto">
           {skills.map((skill) => (
             <div
               key={skill.name}
               className="bg-white rounded-xl shadow-sm p-6 flex flex-col items-center justify-center 
-                       hover:shadow-md transition-all border"
+                       hover:shadow-md transition-all"
             >
               {skill.icon}
               <p className="mt-2 text-base font-medium">{skill.name}</p>
             </div>
           ))}
         </div>
-      </div>
-    </Container>
+        </Container>
+      
+</>
+   
   );
 };
 

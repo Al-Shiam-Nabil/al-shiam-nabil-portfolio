@@ -26,18 +26,18 @@ const Banner = () => {
           </p>
 
           <div className="flex flex-wrap justify-center lg:justify-start gap-5 mt-2">
-            <button class="relative w-[200px] inline-flex items-center justify-center px-4 py-2.5 overflow-hidden tracking-tighter text-white bg-accent  group cursor-pointer">
-              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-primary rounded-full group-hover:w-56 group-hover:h-56"></span>
+            <button className="relative w-[200px] inline-flex items-center justify-center px-4 py-2.5 overflow-hidden tracking-tighter text-white bg-accent  group cursor-pointer">
+              <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-primary rounded-full group-hover:w-56 group-hover:h-56"></span>
 
-              <span class="relative text-base font-semibold ">
+              <span className="relative text-base font-semibold ">
                 Download Resume
               </span>
             </button>
 
-            <button class="relative w-[200px] inline-flex items-center justify-center px-4 py-2.5 overflow-hidden tracking-tighter text-white bg-accent  group cursor-pointer">
-              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-primary rounded-full group-hover:w-56 group-hover:h-56"></span>
+            <button className="relative w-[200px] inline-flex items-center justify-center px-4 py-2.5 overflow-hidden tracking-tighter text-white bg-accent  group cursor-pointer">
+              <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-primary rounded-full group-hover:w-56 group-hover:h-56"></span>
 
-              <span class="relative text-base  font-semibold">Github</span>
+              <span className="relative text-base  font-semibold">Github</span>
             </button>
           </div>
         </div>

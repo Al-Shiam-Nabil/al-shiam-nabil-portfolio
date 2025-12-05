@@ -27,7 +27,7 @@ const Navbar = () => {
 
                 <MyLink>About</MyLink>
                 <MyLink>Technology</MyLink>
-                <MyLink>Services</MyLink>
+                {/* <MyLink>Services</MyLink> */}
                 <MyLink>Projects</MyLink>
                 <MyLink>Contact</MyLink>
               </ul>
@@ -41,7 +41,7 @@ const Navbar = () => {
 
           <MyLink>About</MyLink>
           <MyLink>Technology</MyLink>
-          <MyLink>Services</MyLink>
+          {/* <MyLink>Services</MyLink> */}
           <MyLink>Projects</MyLink>
           <MyLink>Contact</MyLink>
           <li>Dark</li>

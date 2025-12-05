@@ -1,13 +1,13 @@
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Banner from "./Components/Banner/Banner";
 import Navbar from "./Components/Header/Navbar";
-import Services from "./Components/MyServices/Services";
+import Projects from "./Components/projects/Projects";
 import TechStack from "./Components/TechStack/TechStack";
 
 function App() {
   return (
     <>
-      <body className="bg-base-100 text-accent">
+      <div className="bg-base-100 text-accent">
         <header>
           <Navbar></Navbar>
         </header>
@@ -16,9 +16,9 @@ function App() {
           <Banner></Banner>
           <AboutMe></AboutMe>
           <TechStack></TechStack>
-          <Services></Services>
+        <Projects></Projects>
         </main>
-      </body>
+      </div>
     </>
   );
 }
