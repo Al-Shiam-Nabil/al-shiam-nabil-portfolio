@@ -1,6 +1,7 @@
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Banner from "./Components/Banner/Banner";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Header/Navbar";
 import Projects from "./Components/projects/Projects";
 import TechStack from "./Components/TechStack/TechStack";
@@ -17,9 +18,12 @@ function App() {
           <Banner></Banner>
           <AboutMe></AboutMe>
           <TechStack></TechStack>
+          
         <Projects></Projects>
         <Contact></Contact>
         </main>
+
+        <Footer></Footer>
       </div>
     </>
   );

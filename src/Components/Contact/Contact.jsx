@@ -82,11 +82,11 @@ const Contact = () => {
               </a>
 
               <a
-                href="mailto:nabil15-4777@diu.edu.bd"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=nabil15-4777@diu.edu.bd"
                 target="_blank"
-                className="hover:scale-110 duration-400 ease-in-out inline-block"
+                 className="hover:scale-110 duration-400 ease-in-out inline-block"
               >
-                <MdEmail className="text-red-600 text-4xl"></MdEmail>{" "}
+                <MdEmail className="text-red-600 text-4xl" />
               </a>
             </div>
           </div>
