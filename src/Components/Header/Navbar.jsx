@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Container from "../Shared/Container";
 import MyLink from "./MyLink";
 import { CiMenuFries } from "react-icons/ci";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -17,9 +18,9 @@ const Navbar = () => {
   </>
 
   return (
-    <nav className="bg-base-100 py-5 shadow relative z-30">
+    <nav className="bg-base-100 py-3 shadow relative z-30">
       <Container className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold  text-primary">Al Shiam Nabil</h2>
+        <Link to="home" duration={700} smooth={true} className="text-2xl font-bold  text-primary">Al Shiam Nabil</Link>
 
         <div className="lg:hidden">
           <div >

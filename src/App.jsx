@@ -7,13 +7,14 @@ import Navbar from "./Components/Header/Navbar";
 import Projects from "./Components/projects/Projects";
 import BackToTop from "./Components/Shared/BackToTop";
 import TechStack from "./Components/TechStack/TechStack";
+import Container from "./Components/Shared/Container";
 
 function App() {
   return (
     <>
      <Element name="home">
        <div className="bg-base-100 text-accent">
-        <BackToTop></BackToTop>
+       <Container> <BackToTop></BackToTop></Container>
         <header>
           <Navbar></Navbar>
         </header>

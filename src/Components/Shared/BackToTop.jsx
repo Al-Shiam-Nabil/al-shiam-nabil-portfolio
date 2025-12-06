@@ -1,12 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
-/**
- * Props:
- *  - threshold: number (pixels) - show after scrollY > threshold
- *  - mode: "pixels" | "half"  (if "half", shows after window.innerHeight / 2)
- *  - className: extra classes
- */
+
 const BackToTop = ({ threshold = 200, mode = "pixels", className = "" }) => {
   const [visible, setVisible] = useState(false);
 
@@ -51,7 +46,8 @@ const BackToTop = ({ threshold = 200, mode = "pixels", className = "" }) => {
   };
 
   return (
-    <button
+
+        <button
       aria-label="Back to top"
       title="Back to top"
       onClick={handleClick}
@@ -67,6 +63,7 @@ const BackToTop = ({ threshold = 200, mode = "pixels", className = "" }) => {
     >
       <FaArrowUp />
     </button>
+
   );
 };
 
