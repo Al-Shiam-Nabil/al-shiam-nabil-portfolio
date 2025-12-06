@@ -109,7 +109,7 @@ const Projects = () => {
               <ul>
                 {details?.keyFeatures.map((feature, i) => (
                   <li key={i} className="flex gap-2 mb-2 text-sm">
-                    <TiTick className="text-secondary text-xl"></TiTick>
+                    <TiTick className="text-secondary text-xl shrink-0"></TiTick>
                     {feature}
                   </li>
                 ))}
