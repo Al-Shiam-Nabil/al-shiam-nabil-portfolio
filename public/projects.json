@@ -26,7 +26,7 @@
         "keyFeatures": [
             "Users can log in, browse toys, view detailed information.",
             "Integrated Firebase Authentication for secure user management.Implemented Login, Logout, Edit Profile, and Forgot Password features. ",
-            "Dynamic search and sorting funtionality."
+            "Dynamic search and sorting functionality."
         ],
         "clientGithubLink": "https://github.com/Al-Shiam-Nabil/toy-topia-store",
         "serverGithubLink": "",

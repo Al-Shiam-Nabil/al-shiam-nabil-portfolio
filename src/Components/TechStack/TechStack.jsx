@@ -17,6 +17,7 @@ import {
   SiVercel,
 } from "react-icons/si";
 import Heading from "../Shared/Heading";
+import { Element } from "react-scroll";
 
 const skills = [
   { name: "HTML", icon: <FaHtml5 className="text-4xl text-orange-500" /> },
@@ -49,7 +50,9 @@ const TechStack = () => {
   return (
    
 <>
-    <Container>
+<Element name="techStack">
+  
+    <Container >
       <Heading>Tech Stack</Heading>
      
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 sm:gap-6  mx-auto">
@@ -65,6 +68,7 @@ const TechStack = () => {
           ))}
         </div>
         </Container>
+</Element>
       
 </>
    

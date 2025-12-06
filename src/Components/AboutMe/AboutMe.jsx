@@ -7,9 +7,11 @@ import {
   FaQuestionCircle,
   FaUser,
 } from "react-icons/fa";
+import { Element } from "react-scroll";
 
 const AboutMe = () => {
   return (
+    <Element name="about">
     <Container className="my-24">
       <Heading>About Me</Heading>
 
@@ -80,6 +82,7 @@ const AboutMe = () => {
         </div>
       </div>
     </Container>
+    </Element>
   );
 };
 

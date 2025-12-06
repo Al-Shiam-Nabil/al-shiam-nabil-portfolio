@@ -11,10 +11,12 @@ import {
 } from "react-icons/fa";
 import { FaSquareGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { Element } from "react-scroll";
 
 const Contact = () => {
   return (
-    <Container>
+   <Element name="contact">
+     <Container>
       <Heading>Contact</Heading>
 
       <div className="w-full">
@@ -84,7 +86,7 @@ const Contact = () => {
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=nabil15-4777@diu.edu.bd"
                 target="_blank"
-                 className="hover:scale-110 duration-400 ease-in-out inline-block"
+                className="hover:scale-110 duration-400 ease-in-out inline-block"
               >
                 <MdEmail className="text-red-600 text-4xl" />
               </a>
@@ -137,6 +139,7 @@ const Contact = () => {
         </div>
       </div>
     </Container>
+   </Element>
   );
 };
 

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Container from "../Shared/Container";
 import Heading from "../Shared/Heading";
 import { TiTick } from "react-icons/ti";
+import { Element } from "react-scroll";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -35,7 +36,8 @@ const Projects = () => {
   console.log(details);
 
   return (
-    <Container>
+  <Element name="projects">
+      <Container>
       <Heading>Projects</Heading>
 
       {loading ? (
@@ -148,6 +150,7 @@ const Projects = () => {
         </div>
       </dialog>
     </Container>
+  </Element>
   );
 };
 
