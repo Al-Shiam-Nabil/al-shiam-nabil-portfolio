@@ -52,7 +52,7 @@ const BackToTop = ({ threshold = 200, mode = "pixels", className = "" }) => {
       title="Back to top"
       onClick={handleClick}
       className={
-        "fixed z-50 right-5 bottom-4 md:right-8 md:bottom-4 flex items-center justify-center " +
+        "fixed z-50 rounded-lg right-5 bottom-4 md:right-8 md:bottom-4 flex items-center justify-center " +
         "bg-primary/50 text-white p-3 cursor-pointer hover:bg-primary/80  shadow-lg transform transition-all duration-300 " +
         (visible
           ? "opacity-100 translate-y-0 scale-100 pointer-events-auto"

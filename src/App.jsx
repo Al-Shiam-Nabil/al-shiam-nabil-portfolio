@@ -12,25 +12,28 @@ import Container from "./Components/Shared/Container";
 function App() {
   return (
     <>
-     <Element name="home">
-       <div className="bg-base-100 text-accent">
-       <Container> <BackToTop></BackToTop></Container>
-        <header>
-          <Navbar></Navbar>
-        </header>
+      <Element name="home">
+        <div className="bg-base-100 text-primary-content">
+          <Container>
+            {" "}
+            <BackToTop></BackToTop>
+          </Container>
+          <header>
+            <Navbar></Navbar>
+          </header>
 
-        <main>
-          <Banner></Banner>
-          <AboutMe></AboutMe>
-          <TechStack></TechStack>
+          <main>
+            <Banner></Banner>
+            <AboutMe></AboutMe>
+            <TechStack></TechStack>
 
-          <Projects></Projects>
-          <Contact></Contact>
-        </main>
+            <Projects></Projects>
+            <Contact></Contact>
+          </main>
 
-        <Footer></Footer>
-      </div>
-     </Element>
+          <Footer></Footer>
+        </div>
+      </Element>
     </>
   );
 }

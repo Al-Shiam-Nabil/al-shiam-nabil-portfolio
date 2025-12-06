@@ -3,6 +3,7 @@ import Container from "../Shared/Container";
 import Heading from "../Shared/Heading";
 import { TiTick } from "react-icons/ti";
 import { Element } from "react-scroll";
+import MotionAnimation from "../Shared/MotionAnimation";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -45,50 +46,52 @@ const Projects = () => {
             <span className="loading loading-spinner loading-xl text-primary"></span>
           </div>
         ) : (
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-8 ">
-            {projects.map((project) => (
-              <div
-                key={project.id}
-                className="rounded-xl bg-white shadow-lg shadow-gray-300 overflow-hidden"
-              >
-                <img
-                  src={project?.image}
-                  alt={projects?.name}
-                  className="w-full h-[300px] object-cover"
-                />
-                <div className="w-full p-6 space-y-3 ">
-                  <h3 className="text-xl font-semibold capitalize">
-                    {project?.name}
-                  </h3>
-                  <p className="text-sm font-medium text-base-200 ">
-                    {project?.shortDescription.slice(0, 100) + "..."}
-                  </p>
+          <MotionAnimation>
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-5 md:gap-x-8 gap-y-8 ">
+              {projects.map((project) => (
+                <div
+                  key={project.id}
+                  className="rounded-xl bg-info-content shadow-lg overflow-hidden"
+                >
+                  <img
+                    src={project?.image}
+                    alt={projects?.name}
+                    className="w-full h-[150px] sm:h-[300px] object-cover"
+                  />
+                  <div className="w-full p-4 sm:p-6 space-y-2 sm:space-y-3 ">
+                    <h3 className="text-base truncate sm:text-xl font-semibold capitalize">
+                      {project?.name}
+                    </h3>
+                    <p className="hidden sm:block text-sm font-medium text-base-200 ">
+                      {project?.shortDescription.slice(0, 100) + "..."}
+                    </p>
 
-                  <div className="flex items-center gap-4   flex-wrap sm:flex-nowrap">
-                    <button
-                      onClick={() => handleModal(project?.id)}
-                      className="relative  w-full inline-flex items-center justify-center px-4 py-2.5 overflow-hidden tracking-tighter text-white bg-primary  group cursor-pointer"
-                    >
-                      <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-accent rounded-full group-hover:w-[500px] group-hover:h-57"></span>
+                    <div className="flex items-center gap-x-4 gap-y-2   flex-wrap sm:flex-nowrap">
+                      <button
+                        onClick={() => handleModal(project?.id)}
+                        className="relative  w-full inline-flex items-center justify-center px-2 md:px-4 py-1.5 sm:py-2 rounded-full overflow-hidden tracking-tighter text-white bg-primary  group cursor-pointer"
+                      >
+                        <span className="absolute w-0 h-0 transition-all duration-1000 ease-out bg-accent rounded-full group-hover:w-[500px] group-hover:h-57"></span>
 
-                      <span className="relative text-base font-semibold ">
-                        View Details
-                      </span>
-                    </button>
-                    <button className="relative  w-full inline-flex items-center justify-center px-4 py-2.5 overflow-hidden tracking-tighter text-white bg-accent  group cursor-pointer">
-                      <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-primary rounded-full group-hover:w-[500px] group-hover:h-57"></span>
+                        <span className="relative text-sm sm:text-base font-semibold ">
+                          View Details
+                        </span>
+                      </button>
+                      <button className="relative  w-full inline-flex items-center justify-center px-2 md:px-4 py-1.5 sm:py-2 rounded-full overflow-hidden tracking-tighter text-white bg-accent  group cursor-pointer">
+                        <span className="absolute w-0 h-0 transition-all duration-1000 ease-out bg-primary rounded-full group-hover:w-[500px] group-hover:h-57"></span>
 
-                      <span className="relative text-base font-semibold ">
-                        <a href={project?.liveLink} target="_blank">
-                          Live Preview
-                        </a>
-                      </span>
-                    </button>
+                        <span className="relative text-sm sm:text-base font-semibold ">
+                          <a href={project?.liveLink} target="_blank">
+                            Live Preview
+                          </a>
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </MotionAnimation>
         )}
 
         <dialog ref={modalRef} className="modal">
@@ -101,7 +104,7 @@ const Projects = () => {
               />
 
               {/* name */}
-              <h2 className="text-xl text-accent font-semibold capitalize">
+              <h2 className="text-xl text-primary-content font-semibold capitalize">
                 {details?.name}
               </h2>
               <p className=" text-sm">{details?.description}</p>
@@ -124,13 +127,13 @@ const Projects = () => {
               </div>
 
               <div className="flex gap-3 items-center flex-wrap">
-                <button className="btn btn-primary rounded-none shadow-none">
+                <button className="btn btn-primary btn-sm rounded-full shadow-none">
                   <a href={details?.clientGithubLink} target="_blank">
                     Client GitHub
                   </a>
                 </button>
                 {details?.serverGithubLink && (
-                  <button className="btn btn-primary rounded-none shadow-none">
+                  <button className="btn btn-primary btn-sm rounded-full shadow-none">
                     <a href={details?.serverGithubLink} target="_blank">
                       Server GitHub
                     </a>
@@ -142,7 +145,7 @@ const Projects = () => {
             <div className="modal-action">
               <form method="dialog">
                 {/* if there is a button, it will close the modal */}
-                <button className="btn btn-accent shadow-none rounded-none text-white">
+                <button className="btn btn-sm btn-accent shadow-none rounded-full text-white">
                   Close
                 </button>
               </form>

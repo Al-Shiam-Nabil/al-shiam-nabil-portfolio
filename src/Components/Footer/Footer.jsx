@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#001931] text-base-100 pt-16 pb-6 mt-24">
+    <footer className="bg-neutral text-secondary-content pt-16 pb-6 mt-24">
       <Container>
         <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-20  ">
           {/* Left */}
@@ -21,7 +21,7 @@ const Footer = () => {
 
             <Link
              to="contact" duration={700} smooth={true}
-              className="inline-block bg-secondary text-white font-semibold px-5 py-2  mt-6 hover:opacity-90 transition"
+              className="inline-block bg-primary cursor-pointer text-white font-semibold rounded-full px-5 py-2  mt-6 hover:opacity-90 transition"
             >
               Get in Touch
             </Link>
