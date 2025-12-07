@@ -14,7 +14,7 @@
         ],
         "clientGithubLink": "https://github.com/Al-Shiam-Nabil/car-rent-wheels-client",
         "serverGithubLink": "https://github.com/Al-Shiam-Nabil/car-rent-wheels-server",
-        "liveLink": "https://rent-wheels-project-10.netlify.app/"
+        "liveLink": "https://car-rent-wheels-client.vercel.app/"
     },
     {
         "id": 2,
