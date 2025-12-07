@@ -51,7 +51,7 @@ const Projects = () => {
               {projects.map((project) => (
                 <div
                   key={project.id}
-                  className="rounded-xl bg-info-content shadow-lg overflow-hidden"
+                  className="rounded-xl bg-info-content shadow-md overflow-hidden"
                 >
                   <img
                     src={project?.image}
